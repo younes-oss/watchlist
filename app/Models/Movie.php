@@ -15,4 +15,13 @@ public function lists()
 {
     return $this->belongsToMany(MovieList::class);
 }
+
+protected $fillable = [
+        'title',
+        'genre',
+        'year',
+        'watched',
+        'user_id'
+    ];
+
 }
